@@ -6,16 +6,30 @@ body{
 
 
 }
-.container{
-min-width: 960px;
+.floppy-container{
     margin: auto;
-    width: 100%;
+    width: 45%;
+
+}
+
+.floppy-container img{
+    position: absolute;
+
+}
+
+.screen{
+z-index: 0;
+width: 420px;
+height: 250px;
+position: absolute;
+left: 700px;
+top: 165px;
 
 }
 
 .floppy{
-    position: absolute;
     max-width: 350px;
+    min-width: 250px;
     transition-property: rotate;
     transition-duration: 1s;
 }
@@ -24,18 +38,28 @@ min-width: 960px;
 rotate: 20deg;
 }
 
-#PSA{
+#PSA:hover{
+    rotate: -20deg;
+}
 
-    top:50%;
+#PSA{
+    left: 200px;
+    top:350px;
 }
 
 #CPS{
-;
-    left: 25%;
+    top: 0px;
+    left: 200px;
+}
+
+#TRANS{
+    left: 0%;
+    top: 200px
 }
 
 #comp{
-    width: 50%;
+    width: 750px;
+    z-index: 1;
     position: absolute;
-    min-width: 750px;
+    left: 500px;
 }
