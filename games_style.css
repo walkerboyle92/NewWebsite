@@ -45,6 +45,7 @@ rotate: 20deg;
 #PSA{
     left: 200px;
     top:350px;
+
 }
 
 #CPS{
@@ -63,3 +64,39 @@ rotate: 20deg;
     position: absolute;
     left: 500px;
 }
+
+
+@media (max-width: 1250px) {
+.comp-container{
+    display: none;
+}
+
+.floppy-container{
+    width: 100%;
+}
+
+.floppy-container a{
+    width: 100%;
+}
+
+.floppy{
+    width: 500px;
+}
+
+#CPS{
+    rotate: 25deg;
+    left: 0px;
+}
+
+#PSA{
+    rotate: -25deg;
+    left: 0px;
+    top: 425px;
+    z-index: 1;
+}
+
+#TRANS{
+    top: 200px;
+}
+  }
+  
