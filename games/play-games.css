@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+
+.nav{
+
+    width: 15%;
+    margin: 25px;
+}
+
+@media (max-width: 1340px) {
+ 
+    .nav{
+    width: 10%;
+ }
+
+ 
+
+}
