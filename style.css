@@ -14,8 +14,9 @@
     box-sizing: border-box;
 }
   body {
-    background-image: url('img/super8_glitch.gif');
+    /* background-image: url('img/super8_glitch.gif'); */
     /* background-image: url('img/super8.jpg'); */
+        background-image: url('img/Hole\ _3.gif');
     background-repeat: no-repeat; 
     background-attachment: fixed;
     background-size: cover;
