@@ -1,0 +1,110 @@
+.center-item{
+    position: relative;
+}
+
+
+.menu-items{
+    width:415px;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: center;
+    padding-left: 10px;
+    padding-top: 0px;
+    margin-top: 0px;
+    position: relative;
+
+}
+
+
+
+
+.ipod-menu{
+    position: absolute;
+    top: 175px;
+    left: 379px;
+    background-color: rgb(204, 204, 153);
+    height:343px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+
+}
+
+.menu-items:hover{
+    background-color: rgb(102,102,102);
+    color:rgb(204, 204, 153);
+}
+
+.ipod-menu h3{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 2px solid;
+    display:inline-block;
+    width: 100%;
+    margin: 0px;
+    line-height: 25px;
+  
+}
+
+#battery{
+width: 50px;
+position: absolute;
+right: 15px;
+top: 14px;
+}
+
+.menu-items img{
+    width: 10px;
+    position: absolute;
+    right: 15px;
+    top: 16px;
+
+}
+
+
+
+.carrot-hover{
+
+    display:none;
+    z-index:1;
+}
+
+#hexgirlfriends{
+    position: absolute;
+    top: 170px;
+    left: 372px;
+    display:none;
+ 
+ 
+}
+
+#sugarglass{
+    position: absolute;
+    top: 170px;
+    left: 372px;
+    display: none;
+}
+
+#dot {
+    height: 115px;
+    width: 115px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 575px;
+    left: 465px;
+
+    text-align: center;
+    vertical-align: center;
+    line-height: 115px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+  }
+
+  #dot:hover{
+    background-color: rgb(235, 235, 235);
+    color: rgb(155, 155, 155);
+  }
+
+
