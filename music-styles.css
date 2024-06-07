@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 .center-item{
     position: relative;
 }
@@ -60,7 +64,6 @@ top: 14px;
     top: 16px;
 
 }
-
 
 
 .carrot-hover{
