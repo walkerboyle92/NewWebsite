@@ -30,15 +30,20 @@ function onWindowResize() {
 
 
 // Materials
+const TVmat1 = new THREE.TextureLoader().load('img/TV.png');
+const TVmat2 = new THREE.TextureLoader().load('img/TV_sides.png');
 const vhs1 = new THREE.TextureLoader().load('img/tape1.png');
 const vhs2 = new THREE.TextureLoader().load('img/tape2.png');
 const vhs3 = new THREE.TextureLoader().load('img/tape3.png');
-const TVmat1 = new THREE.TextureLoader().load('img/TV.png');
-const TVmat2 = new THREE.TextureLoader().load('img/TV_sides.png');
-TVmat1.colorSpace = THREE.SRGBColorSpace;
-TVmat2.colorSpace = THREE.SRGBColorSpace;
-vhs1.colorSpace = THREE.SRGBColorSpace;
-vhs2.colorSpace = THREE.SRGBColorSpace;
+const vhs4 = new THREE.TextureLoader().load('img/tape4.png');
+const vhs5 = new THREE.TextureLoader().load('img/tape5.png');
+const vhs6 = new THREE.TextureLoader().load('img/tape6.png');
+
+const mats = [vhs1,vhs2,vhs3,vhs4,vhs5,vhs6, TVmat1, TVmat2];
+mats.forEach(changeColorSpace);
+function changeColorSpace (mat){
+    mat.colorSpace = THREE.SRGBColorSpace;
+}
 
 const TVmat = [
     new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('img/TV_sides.png')}),
@@ -54,42 +59,49 @@ const TVmat = [
 const vhs_size =  new THREE.BoxGeometry(2, 1, .2);
 
 //box1 
-const box1 = new THREE.Mesh(vhs_size,
-    new THREE.MeshBasicMaterial({map:vhs1})
-);
-
-box1.position.set(-3.5,.5,0);
+const box1 = new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs1}));
+box1.position.set(-3.5,1,0);
 box1.rotation.set(0, (5/180)* Math.PI, (-15/180)* Math.PI);
 box1.name = "TriangleLady";
 
 //box2
-const box2 = new THREE.Mesh(vhs_size, 
-    new THREE.MeshBasicMaterial({map:vhs2})
-);
-box2.position.set(-3,-2,0);
+const box2 = new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs2}));
+box2.position.set(-3,-1.5,0);
 box2.rotation.set(0, (-10/180)* Math.PI, (25/180)* Math.PI);
 box2.name = "NbdyCrs";
 
 //box3
-const box3 = new THREE.Mesh(vhs_size, 
-    new THREE.MeshBasicMaterial({map:vhs3})
-);
-box3.position.set(3,-2,0);
-box3.rotation.set(0, (-10/180)* Math.PI, (25/180)* Math.PI);
+const box3 = new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs3}));
+box3.position.set(3.5,-2,0);
+box3.rotation.set(0, (10/180)* Math.PI, (-15/180)* Math.PI);
 box3.name = "Cycle";
+
+//box4
+const box4 = new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs4}));
+box4.position.set(3.5,1,0);
+box4.rotation.set(0, (-10/180)* Math.PI, (25/180)* Math.PI);
+box4.name = "beginning";
+
+//box5
+const box5= new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs5}));
+box5.position.set(0,2.5,0);
+box5.rotation.set(0, (5/180)* Math.PI, (-15/180)* Math.PI);
+box5.name = "NewStrat";
+
+//box5
+const box6= new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs6}));
+box6.position.set(0,-3,0);
+box6.rotation.set(0, (10/180)* Math.PI, (25/180)* Math.PI);
+box6.name = "interview";
 
 //TV
 const TVGeometry = new THREE.BoxGeometry(3, 2, 2);
-const TV = new THREE.Mesh( TVGeometry,TVmat   
-);
+const TV = new THREE.Mesh(TVGeometry,TVmat);
 TV.name = "TV";
 
-//rotation
+//rotation & adding to scene
+const vhs_tapes = [box1, box2, box3, box4, box5, box6];
 scene.add(TV);
-TV.add(box1);
-TV.add(box2);
-TV.add(box3);
-
 
 //stars
 var stars=[]
@@ -120,16 +132,13 @@ function addSphere(){
         stars.push(sphere); 
     }
 }
-
-
-
-
-
+//animation
 function animate() {
-//   point.rotation.z += 0.003;
-  box1.rotation.z += 0.01;
-  box2.rotation.z += 0.01;
 
+vhs_tapes.forEach(tape => {
+    tape.rotation.z += 0.01;
+    TV.add(tape);
+  });
 
 	renderer.render( scene, camera );
 }
