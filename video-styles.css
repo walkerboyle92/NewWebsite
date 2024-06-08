@@ -18,19 +18,18 @@ body{
 	background-image: url('img/YoutubeTV.png');
 	background-repeat: no-repeat;
   	background-size:contain;
-	width: 1050px;
+	width: 900px;
 	height: 525px;
 
 }
 
 
-
 iframe{
 border-radius: 40px;
 position: relative;
-top:65px;
+top:60px;
 left: 65px;
-width: 580px;
+width: 560px;
 height:380px;
 
 
@@ -46,6 +45,18 @@ height:380px;
 
 .nav-item{
 	background-color: black;
+	border: 2px solid black;
+    box-shadow: -8px 8px  rgb(255, 105, 105);
+}
+
+
+
+nav a:hover{
+
+    background-color:  rgb(255, 105, 105);
+	border: 2px solid  rgb(255, 105, 105);
+    box-shadow: -8px 8px  rgb(199, 199, 199);
+
 }
 .bottom-text{
 	grid-area: 2/2;
