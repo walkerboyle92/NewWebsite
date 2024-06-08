@@ -10,10 +10,12 @@ body{
 
 }
 
+.wrapper{
+	padding-top: 25px;
+}
 
 .video-container{
 	margin: auto;
-
 	background-image: url('img/YoutubeTV.png');
 	background-repeat: no-repeat;
   	background-size:contain;
