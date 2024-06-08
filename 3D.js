@@ -30,6 +30,7 @@ function onWindowResize() {
 
 
 // Materials
+const video = document.getElementById( 'video' );
 const TVmat1 = new THREE.TextureLoader().load('img/TV.png');
 const TVmat2 = new THREE.TextureLoader().load('img/TV_sides.png');
 const vhs1 = new THREE.TextureLoader().load('img/tape1.png');
