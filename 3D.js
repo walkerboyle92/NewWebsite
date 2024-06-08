@@ -63,7 +63,7 @@ const vhs_size =  new THREE.BoxGeometry(2, 1, .2);
 const box1 = new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs1}));
 box1.position.set(-3.5,1,0);
 box1.rotation.set(0, (5/180)* Math.PI, (-15/180)* Math.PI);
-box1.name = "TriangleLady";
+box1.name = "triangle";
 
 //box2
 const box2 = new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs2}));
@@ -165,9 +165,10 @@ raycaster.setFromCamera(coords, camera);
 const intersections = raycaster.intersectObjects(scene.children, true);
 if(intersections.length > 0){
     const selectedObject = intersections[0].object.name;
-    if(selectedObject == "TriangleLady"){
-        window.open("https://walkerboyle.com/Videos/triangle")}
+    const link='https://walkerboyle.com/Videos/'+ selectedObject;
+     window.open(link);
         console.log(selectedObject);
+        
 }
 let INTERSECTED;
 document.addEventListener('mousemove', onDocumentMouseMove );
