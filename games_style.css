@@ -6,6 +6,9 @@ body{
 
 
 }
+nav{
+    margin:auto;
+}
 .floppy-container{
     margin: auto;
     width: 45%;
