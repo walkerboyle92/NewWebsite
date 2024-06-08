@@ -1,11 +1,26 @@
 body{
     background-color: black;
 }
-
+main{
+    display:grid;
+    grid-template-columns: auto 900px;
+    justify-content: center;
+    gap:25px;
+}
 .nav{
 
-    width: 15%;
-    margin: 25px;
+    margin:auto;
+    min-width:200px;
+    grid-column-start: 1;
+ 
+}
+
+#unity-container {
+    grid-column-start: 2;
+    padding-top: 5%;
+    min-width:900px;
+
+
 }
 
 @media (max-width: 1340px) {
