@@ -63,7 +63,7 @@ const vhs_size =  new THREE.BoxGeometry(2, 1, .2);
 const box1 = new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs1}));
 box1.position.set(-3.5,1,0);
 box1.rotation.set(0, (5/180)* Math.PI, (-15/180)* Math.PI);
-box1.name = "triangle";
+box1.name = "TriangleLady";
 
 //box2
 const box2 = new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs2}));
@@ -75,13 +75,13 @@ box2.name = "NbdyCrs";
 const box3 = new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs3}));
 box3.position.set(3.5,-2,0);
 box3.rotation.set(0, (10/180)* Math.PI, (-15/180)* Math.PI);
-box3.name = "Cycle";
+box3.name = "FullCycle";
 
 //box4
 const box4 = new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs4}));
 box4.position.set(3.5,1,0);
 box4.rotation.set(0, (-10/180)* Math.PI, (25/180)* Math.PI);
-box4.name = "beginning";
+box4.name = "bumper";
 
 //box5
 const box5= new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs5}));
