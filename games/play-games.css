@@ -1,11 +1,11 @@
-body{
-    background-color: black;
-}
+
 main{
     display:grid;
     grid-template-columns: auto 900px;
     justify-content: center;
     gap:25px;
+    width: 1200px;
+    margin:auto;
 }
 .nav{
 
@@ -14,6 +14,7 @@ main{
     grid-column-start: 1;
  
 }
+
 
 #unity-container {
     grid-column-start: 2;
