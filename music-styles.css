@@ -1,9 +1,10 @@
 body{
 
-    background-image: linear-gradient(to right,black 50%,white 50%);
-    border-radius: 50%;
-    background-size: auto;
-    background-size: 20px 20px;
+ 
+    background-image: url('img/background_ideas.png');
+    /* border-radius: 50%; */
+    background-size: cover;
+    /* background-size: 20px 20px;  */
 
           -webkit-animation: slidein 100s;
           animation: slidein 100s;
@@ -23,9 +24,6 @@ body{
     position: relative;
 }
 
-
-
-
 .menu-items{
     width:415px;
     height: 50px;
@@ -39,8 +37,6 @@ body{
 }
 
 
-
-
 .ipod-menu{
     position: absolute;
     top: 175px;
@@ -52,12 +48,25 @@ body{
 
 }
 
+#sub-menu{
+
+    display: none;
+    position: absolute;
+    top: 175px;
+    left: 379px;
+    background-color: rgb(204, 204, 153);
+    height:343px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;  
+    
+}
+
 .menu-items:hover{
     background-color: rgb(102,102,102);
     color:rgb(204, 204, 153);
 }
 
-.ipod-menu h3{
+.ipod-menu h3, #sub-menu h3{
     text-align: center;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -105,6 +114,14 @@ top: 14px;
     top: 170px;
     left: 372px;
     display: none;
+}
+
+#maniculum{
+    position: absolute;
+    top: 170px;
+    left: 372px;
+    display: none;
+    
 }
 
 #dot {
