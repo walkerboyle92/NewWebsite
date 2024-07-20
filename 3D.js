@@ -87,7 +87,7 @@ box4.name = "bumper";
 const box5= new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs5}));
 box5.position.set(0,2.5,0);
 box5.rotation.set(0, (5/180)* Math.PI, (-15/180)* Math.PI);
-box5.name = "NewStrat";
+box5.name = "Thesis/WindowsExp/NewStrategy/index.html";
 
 //box5
 const box6= new THREE.Mesh(vhs_size,  new THREE.MeshBasicMaterial({map: vhs6}));
@@ -165,7 +165,7 @@ raycaster.setFromCamera(coords, camera);
 const intersections = raycaster.intersectObjects(scene.children, true);
 if(intersections.length > 0){
     const selectedObject = intersections[0].object.name;
-    const link='https://walkerboyle.com/'+ selectedObject;
+    const link='https://walkerboyle.com/Videos/'+ selectedObject;
      window.open(link);
         console.log(selectedObject);
         
