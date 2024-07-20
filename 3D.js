@@ -213,5 +213,4 @@ if ( intersects.length > 0 ) {
 function hoverAnimation(name){
     name.rotation.z += 0.05;
 
-
 }

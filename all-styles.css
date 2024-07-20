@@ -51,4 +51,14 @@ nav a:hover{
     place-items:center;
 }
 
+@media (max-width: 650px) {
+.mobile-no{
+    color: grey;
 
+  }
+
+  .mobile-warning::before{
+    /* background-color: grey; */
+    content:" (desktop only)";
+    }
+}
