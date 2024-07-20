@@ -165,7 +165,7 @@ raycaster.setFromCamera(coords, camera);
 const intersections = raycaster.intersectObjects(scene.children, true);
 if(intersections.length > 0){
     const selectedObject = intersections[0].object.name;
-    const link='https://walkerboyle.com/Videos/'+ selectedObject;
+    const link='https://walkerboyle.com/'+ selectedObject;
      window.open(link);
         console.log(selectedObject);
         

@@ -54,6 +54,9 @@ font-size: 42px;
   font-style: normal;
 }
 
+.not-mobile{
+  display:none;
+}
 
 .bio-container{
   border: 2px solid pink;
@@ -119,7 +122,7 @@ nav{
   width:25%;
   border: none;
   box-shadow: none;
-  height: 45vh;
+  height: 50vh;
 }
 
 .bio{
@@ -131,15 +134,10 @@ nav{
 
 }
 
-.mobile-no{
+.not-mobile{
   color: grey;
-  border: none;
-  box-shadow: -8px 8px  white;
-}
-
-.mobile-warning::before{
-/* background-color: grey; */
-content:" (desktop only)";
+  font-style: italic;
+  display: inline;
 }
 
 .title{
