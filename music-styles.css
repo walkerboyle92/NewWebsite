@@ -36,6 +36,11 @@ body{
 
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 
 .ipod-menu{
     position: absolute;
@@ -50,7 +55,7 @@ body{
 
 #sub-menu{
 
-    display: none;
+
     position: absolute;
     top: 175px;
     left: 379px;
@@ -58,11 +63,16 @@ body{
     height:343px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight:bold;  
+
     
 }
 
 .menu-items:hover{
     background-color: rgb(102,102,102);
+    color:rgb(204, 204, 153);
+}
+
+a:hover{
     color:rgb(204, 204, 153);
 }
 
@@ -104,7 +114,7 @@ top: 14px;
     position: absolute;
     top: 170px;
     left: 372px;
-    display:none;
+
  
 }
 
@@ -112,14 +122,15 @@ top: 14px;
     position: absolute;
     top: 170px;
     left: 372px;
-    display: none;
+
 }
 
 #podcast{
     position: absolute;
     top: 170px;
     left: 372px;
-    display: none;
+
+
     
 }
 
@@ -127,7 +138,8 @@ top: 14px;
     position: absolute;
     top: 170px;
     left: 372px;
-    display: none;
+
+
     
 }
 
@@ -158,6 +170,44 @@ top: 14px;
     color: rgb(155, 155, 155);
   }
 
+
+  #dot2{
+    height: 115px;
+    width: 115px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 575px;
+    left: 320px;
+
+    text-align: center;
+    vertical-align: center;
+    line-height: 115px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+  
+  }
+
+  #dot2:hover{
+    background-color: rgb(235, 235, 235);
+    color: rgb(155, 155, 155);
+  }
+
+  #dot2 img{
+    height: 115px;
+    width: 115px;
+    background-color: rgb(204, 204, 204);
+  
+  }
+
+  #back-button{
+    position: absolute;
+    top: 615px;
+    left: 354px;
+    width: 46px;
+
+  }
 
          
 /*animations*/
