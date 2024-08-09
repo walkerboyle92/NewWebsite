@@ -113,3 +113,27 @@ iframe{
         width: 200px;
         
     }
+
+    @media (max-width: 900px) {
+        /* .container{
+           
+            background-image: url('img/YoutubeTV.png');
+            background-repeat: no-repeat;
+  	background-size:contain;
+        }
+         */
+
+        .video-list{
+            display: none;
+        }
+
+        .description{
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .description{
+            width: 80%;
+        }
+    }

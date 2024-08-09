@@ -30,7 +30,7 @@ body{
 .video-list{
     width: 100%;
     min-width: 250px;
-    max-width: 200px;
+    max-width: 275px;
  
 }
 
@@ -96,4 +96,44 @@ display: block;
     color: white;
     box-shadow: -8px 8px  rgb(199, 199, 199);
 
+}
+
+@media (max-width: 850px) {
+    .TV{
+        display:none;
+    }
+
+    .title{
+        font-size: 64px;
+        margin: 5%;
+    }
+
+    .title h3{
+        margin: 15px;
+    }
+
+    .tape1{
+    transform: rotate(0deg); 
+    transition: transform 1s;
+    }
+
+    .tape2{
+        transform: rotate(0deg);
+        transition: transform 1s;
+    }
+
+    .tapes{
+        padding: 0px;
+    }
+    
+     .container{
+        grid-template-columns: auto;
+    }
+    .home-button{
+        width: 50%;
+    }
+
+    .video-list{
+        max-width: 100%;
+    }
 }
